@@ -1,3 +1,9 @@
 h2 {
   background-color: lightgrey;
 }
+
+.green-rectangle {
+  width:30%;
+  height:200px;
+  background-color: mediumseagreen;
+}

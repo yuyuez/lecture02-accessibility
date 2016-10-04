@@ -7,28 +7,47 @@
 </head>
 <body>
 
-  <div>
+  <header role="banner">
     <h1>My Awesome Blog</h1>
     <p>Where I post about stuff</p>
-  </div>
+  </header>
 
-  <div>
-    <div>
-      <div>
+  <nav role="navigation">
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="#post3">Check it out!</a></li>
+      <li><a href="#post2">An update</a></li>
+      <li><a href="#post1">A blog post!</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section>
+      <h2>Commenting</h2>
+      <form role="form">
+        <label for="commentBox">Leave a short comment on this blog: </label>
+        <input type="text" id="commentBox" name="comment">
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <section role="region" id="post3">
+      <header>
         <h2>Check it out!</h2>
         <p>Posted today</p>
-      </div>
+      </header>
       <p>Check out this cute puppy!</p>
-      <p><img src="img/gzvWJQMuibX5ISaVpCu17h.jpg"></p>
+      <p><img src="img/gzvWJQMuibX5ISaVpCu17h.jpg" alt="a husky puppy"></p>
       <p>Also, lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ea amet rem vel ipsa odit esse iste facilis inventore earum.</p>
       <p>Lorem ipsum dolor sit!</p>
-    </div>
+    </section>
 
-    <div>
-      <div>
+    <section role="region" id="post2">
+      <header>
         <h2>An update</h2>
         <p>Posted yesterday</p>
-      </div>
+      </header>
+      <div class="green-rectangle" aria-label="a giant green rectangle"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perferendis magni odio soluta iure, culpa libero reiciendis hic. Possimus quis, fuga, quos aspernatur velit necessitatibus ex blanditiis asperiores magnam molestiae.</p>
       <p>Sit provident cumque, quam architecto voluptatibus ipsam iusto nihil possimus unde assumenda quis sint consectetur quas sapiente, nemo dicta libero reiciendis, cupiditate eaque laudantium, animi fugiat dolorum iure. Nobis, praesentium!</p>
       <p>Voluptate, necessitatibus, rerum voluptas quam veniam suscipit recusandae provident. Sit at vero expedita ipsam veniam, blanditiis reprehenderit est illum doloribus labore dolore? Incidunt placeat vero, numquam quibusdam labore! Ipsum, error.</p>
@@ -38,24 +57,24 @@
         <li>Nulla vitae elit libero, a pharetra augue.</li>
       </ul>      
       <p>Cumque ipsa sapiente error placeat animi quas maiores esse non, culpa neque consequatur quaerat tempore ut iusto laborum modi a dolor aut consequuntur assumenda, cupiditate maxime eos harum blanditiis voluptatem.</p>
-    </div>
+    </section>
 
-    <div>
-      <div>
+    <section role="region" id="post1">
+      <header>
         <h2>A blog post!</h2>
         <p>Posted last week</p>
-      </div>
+      </header>
       <p>You're looking at this? Really? Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
       <blockquote>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</blockquote>
       <p>Veniam dolorem cupiditate tenetur placeat nulla repellat dicta maxime architecto blanditiis non facere nesciunt quae animi quam quidem ullam, suscipit nisi ipsam voluptatem accusamus necessitatibus itaque autem in, sunt similique.</p>
       <p>In mollitia cumque sapiente ducimus quo labore magni qui quas aperiam, voluptatibus nesciunt dicta enim dignissimos doloribus tempora iusto commodi alias recusandae tempore beatae atque? Totam cum et, perferendis itaque.</p>
       <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div>
+  <footer role="contentinfo">
     <p>This blog was created by me using my own two hands. Some text grabbed from <a href="https://getbootstrap.com/examples/blog/">Bootstrap's blog example</a>.</p>
     <p>&copy; 2016 The Author.</p>
-  </div>
+  </footer>
 </body>
 </html>
